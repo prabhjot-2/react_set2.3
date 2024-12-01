@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import NameRenderer from "./NameRenderer.jsx";
+import NameOutput from "./NameOutput.jsx";
 
-class DisplayName extends Component {
+class NameSequence extends Component {
   state = {
     names: ["Prabh", "Jot", "Singh"], // Array of names
     currentNameIndex: 0,
@@ -37,7 +37,7 @@ class DisplayName extends Component {
     return (
       <div>
         <h3>Full Name</h3>
-        <NameRenderer name={names[currentNameIndex]} />
+        <NameOutput name={names[currentNameIndex]} />
         <button onClick={this.startDisplay} disabled={isDisplaying}>
           {isDisplaying ? "Displaying..." : "Start Display"}
         </button>
@@ -46,4 +46,4 @@ class DisplayName extends Component {
   }
 }
 
-export default DisplayName;
+export default NameSequence;

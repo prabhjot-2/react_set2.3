@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 
-class NameRenderer extends PureComponent {
+class NameOutput extends PureComponent {
   render() {
     console.log("Rendering Name:", this.props.name);
     return (
@@ -13,4 +13,4 @@ class NameRenderer extends PureComponent {
   }
 }
 
-export default NameRenderer;
+export default NameOutput;

@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import DisplayName from "./Components/DisplayName.jsx";
+import NameSequence from "./Components/NameSequence.jsx";
 
 const App = () => {
   return (
     <div>
-      <DisplayName />
+      <NameSequence />
     </div>
   );
 };
